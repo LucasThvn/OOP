@@ -2,7 +2,7 @@
 
 namespace App;
 
-class Car extends Vehicle
+class Car extends Vehicle implements \LightableInterface
 {
 /**
 * @var string
@@ -19,7 +19,17 @@ const ALLOWED_ENERGIES = [
   'electric',
 ];
 
-public function setEnergy (string $energy)
+public function switchOn(): bool
+{
+    return true;
+}
+
+public function switchOff(): bool
+{
+    return false;
+}
+
+    public function setEnergy (string $energy)
 {
     if (in_array($energy, self::ALLOWED_ENERGIES)) {
         $this->energy = $energy;
