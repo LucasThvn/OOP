@@ -1,0 +1,9 @@
+{
+    "name": "lucas/05.poo",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
