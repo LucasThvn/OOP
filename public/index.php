@@ -33,3 +33,5 @@ $highway->addVehiclule($voiture);
 
 var_dump($highway);
 
+$jean = new \App\Car('red','5','fuel');
+$jean->start();
