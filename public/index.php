@@ -34,4 +34,11 @@ $highway->addVehiclule($voiture);
 var_dump($highway);
 
 $jean = new \App\Car('red','5','fuel');
+
 $jean->start();
+
+?>
+<br>
+<?php
+
+echo \App\Speedometer::convertKmToMiles(10);
